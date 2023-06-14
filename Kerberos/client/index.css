@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lucida Sans', sans-serif;
+}
+
+#authPage {
+	/* display: none; */
+}
+
+#mainPage {
+	display: none;
+}
+
+#infoSection {
+	margin-bottom: 2rem;
+}
+
+#sendingSection {
+	margin-bottom: 2rem;
+}
+
+#receivingSection {
+	margin-bottom: 2rem;
+}

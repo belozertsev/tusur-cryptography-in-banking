@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>kvbd2 - Kerberos</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body id="body" onload="clearSessionStorage()">
+	<div id="authPage">
+		<label>Your email:</label>
+		<input type="email" id="emailField">
+
+		<label>Your password:</label>
+		<input type="password" id="passwordField">
+
+		<button id="loginButton" onclick="loginButtonHandler()">Log in!</button>
+	</div>
+
+	<div id="mainPage">
+		<div id="infoSection">
+			<label>Entered email:</label>
+			<div id="infoEmail"></div>
+
+			<label>Entered password:</label>
+			<div id="infoPassword"></div>
+			
+			<label>Current session key:</label>
+			<div id="infoSessionKey"></div>
+		</div>
+
+		<div id="sendingSection">
+			<label>Your friend's email:</label>
+			<input type="email" id="fellowEmailField">
+
+			<label>Message:</label>
+			<input type="text" id="messageField">
+
+			<button id="sendButton" onclick="sendButtonHandler()">Send!</button>
+		</div>
+
+		<div id="receivingSection">
+			<label>Received messages:</label>
+			<div id="receivedMessages"></div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>

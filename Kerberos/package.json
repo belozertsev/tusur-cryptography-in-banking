@@ -1,0 +1,12 @@
+{
+  "name": "kvbd2.2",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "sqlite": "^4.1.2",
+    "sqlite3": "^5.1.2"
+  }
+}
